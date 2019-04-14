@@ -16,7 +16,7 @@ function allowCrossDomain(req, res, next) {
 
 app.use(express.urlencoded());
 app.use(express.json());
-app.post('/', function(req, res) {
+app.post('/yeet', function(req, res) {
 	var furl = req.body.url;
 	console.log(furl);
 	const file = fs.createWriteStream("file");
@@ -27,8 +27,10 @@ app.post('/', function(req, res) {
 	fs.writeFileSync("name",furl);
 	const crypto = require(__dirname + '/crypto/crypto')
 	console.log("yeet",crypto.getHashDate);
-	crypto.getHashDate()
-	
+    crypto.getHashDate()
+    const move = require(__dirname + '/datatransfer/movedata')
+    move.put();
+    
 });
 
 
