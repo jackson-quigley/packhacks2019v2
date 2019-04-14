@@ -2,11 +2,13 @@
 // is updated with the most recent request.
 
 var fs = require('fs');
+var blockstack = require('blockstack');
 
 exports.put = function() {
     fs.readFile("./datatransfer/data", {}, function(data) {
         let thing = JSON.parse(data);
-        blockstack.putFile('https://hub.blockstack.org/' + thing.url, data, {encrypt: true, sign: false});
+        console.log(thing);
+        blockstack.putFile('https://hub.blockstack.org/' + thing.url, data, {sign: false});
     });
 }
 
