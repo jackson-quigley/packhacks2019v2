@@ -70,7 +70,7 @@ input.addEventListener("keyup", function(event) {
 	</script>
 	-->
 
-<p>${tits}</p>
+<p id="sdata">${tits}</p>
 <form  method="POST" action="/yeet" id="request">
 	  URL:
 	    <input type="text" name="url" id="url" autocomplete="no">
