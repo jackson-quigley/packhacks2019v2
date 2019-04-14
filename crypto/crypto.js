@@ -5,8 +5,8 @@ var fs = require('fs');
 exports.getHashDate = function()
 {
 var dataobj = {};
-dataobj['file'] = "../file";
-dataobj['url'] = "../name";
+dataobj['file'] = "file";
+dataobj['url'] = "name";
 var filepath = dataobj['file'];
 var file = fs.readFileSync(filepath,'ascii');
 dataobj['date'] = (new Date(Date.now())).toLocaleString("en-US");
