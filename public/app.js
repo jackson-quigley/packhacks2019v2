@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
             window.location = window.location.origin
         })
     }
-
+    console.log(blockstack.isUserSignedIn)
     if (!blockstack.isUserSignedIn()) {
         request.style.display = "none";
         signin.style.display = "block";
