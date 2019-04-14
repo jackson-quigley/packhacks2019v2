@@ -15,10 +15,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
     let puts = document.getElementById('puts');
     let gets = document.getElementById('gets');
     puts.addEventListener('click', function(events) {
-        // code to put on Gaia here
+        putdata();
     })
     gets.addEventListener('click', function(events) {
-        // code to get from Gaia here
+        fetchdata();
     })
 
     let request = document.getElementById('request');
