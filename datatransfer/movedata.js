@@ -1,8 +1,9 @@
+// These functions assume that the data file in this directory
+// is updated with the most recent request.
 
 function put() {
     readFile("./data", {}, function(data) {
         let thing = JSON.parse(data);
-        // https://hub.blockstack.org
         blockstack.putFile('https://hub.blockstack.org/' + thing.url, data, {encrypt: true, sign: false});
     });
 }
