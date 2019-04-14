@@ -25,7 +25,8 @@ app.post('/', function(req, res) {
 	furl = furl.replace(/[^a-z0-9áéíóúñü \,_]/gim,"-");
 	console.log(furl);	
 	fs.writeFileSync("name",furl);
-	const crypto = require("crypto/crypto.js")
+	const crypto = require(__dirname + '/crypto/crypto')
+	console.log("yeet",crypto.getHashDate);
 	crypto.getHashDate()
 	
 });
