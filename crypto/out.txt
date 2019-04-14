@@ -1,0 +1,128 @@
+FLAG
+ClientRequest {
+  _events:
+   [Object: null prototype] {
+     response: { [Function: bound onceWrapper] listener: [Function] },
+     socket:
+      { [Function: bound onceWrapper] listener: [Function: onSocket] } },
+  _eventsCount: 2,
+  _maxListeners: undefined,
+  outputData:
+   [ { data:
+        'GET //worldclockapi.com/api/json/est/now HTTP/1.1\r\nHost: http\r\nConnection: close\r\n\r\n',
+       encoding: 'latin1',
+       callback: [Function: bound onFinish] } ],
+  outputSize: 84,
+  writable: true,
+  _last: true,
+  chunkedEncoding: false,
+  shouldKeepAlive: false,
+  useChunkedEncodingByDefault: false,
+  sendDate: false,
+  _removedConnection: false,
+  _removedContLen: false,
+  _removedTE: false,
+  _contentLength: 0,
+  _hasBody: true,
+  _trailer: '',
+  finished: true,
+  _headerSent: true,
+  socket: null,
+  connection: null,
+  _header:
+   'GET //worldclockapi.com/api/json/est/now HTTP/1.1\r\nHost: http\r\nConnection: close\r\n\r\n',
+  _onPendingData: [Function: noopPendingOutput],
+  agent:
+   Agent {
+     _events: [Object: null prototype] { free: [Function] },
+     _eventsCount: 1,
+     _maxListeners: undefined,
+     defaultPort: 80,
+     protocol: 'http:',
+     options: { path: null },
+     requests: {},
+     sockets: { 'http:80:': [Array] },
+     freeSockets: {},
+     keepAliveMsecs: 1000,
+     keepAlive: false,
+     maxSockets: Infinity,
+     maxFreeSockets: 256 },
+  socketPath: undefined,
+  timeout: undefined,
+  method: 'GET',
+  path: '//worldclockapi.com/api/json/est/now',
+  _ended: false,
+  res: null,
+  aborted: false,
+  timeoutCb: null,
+  upgradeOrConnect: false,
+  parser: null,
+  maxHeadersCount: null,
+  [Symbol(isCorked)]: false,
+  [Symbol(outHeadersKey)]: [Object: null prototype] { host: [ 'Host', 'http' ] } }
+FLAG
+FLAG
+ClientRequest {
+  _events:
+   [Object: null prototype] {
+     response: { [Function: bound onceWrapper] listener: [Function] },
+     socket:
+      { [Function: bound onceWrapper] listener: [Function: onSocket] } },
+  _eventsCount: 2,
+  _maxListeners: undefined,
+  outputData:
+   [ { data:
+        'GET //worldclockapi.com/api/json/est/now HTTP/1.1\r\nHost: http\r\nConnection: close\r\n\r\n',
+       encoding: 'latin1',
+       callback: [Function: bound onFinish] } ],
+  outputSize: 84,
+  writable: true,
+  _last: true,
+  chunkedEncoding: false,
+  shouldKeepAlive: false,
+  useChunkedEncodingByDefault: false,
+  sendDate: false,
+  _removedConnection: false,
+  _removedContLen: false,
+  _removedTE: false,
+  _contentLength: 0,
+  _hasBody: true,
+  _trailer: '',
+  finished: true,
+  _headerSent: true,
+  socket: null,
+  connection: null,
+  _header:
+   'GET //worldclockapi.com/api/json/est/now HTTP/1.1\r\nHost: http\r\nConnection: close\r\n\r\n',
+  _onPendingData: [Function: noopPendingOutput],
+  agent:
+   Agent {
+     _events: [Object: null prototype] { free: [Function] },
+     _eventsCount: 1,
+     _maxListeners: undefined,
+     defaultPort: 80,
+     protocol: 'http:',
+     options: { path: null },
+     requests: {},
+     sockets: { 'http:80:': [Array] },
+     freeSockets: {},
+     keepAliveMsecs: 1000,
+     keepAlive: false,
+     maxSockets: Infinity,
+     maxFreeSockets: 256 },
+  socketPath: undefined,
+  timeout: undefined,
+  method: 'GET',
+  path: '//worldclockapi.com/api/json/est/now',
+  _ended: false,
+  res: null,
+  aborted: false,
+  timeoutCb: null,
+  upgradeOrConnect: false,
+  parser: null,
+  maxHeadersCount: null,
+  [Symbol(isCorked)]: false,
+  [Symbol(outHeadersKey)]: [Object: null prototype] { host: [ 'Host', 'http' ] } }
+FLAG
+4/14/2019, 6:54:17 PM
+a1490dd6333f400c7f394bcaf269954fbbd62532c694614ea6b8286783a3c676
