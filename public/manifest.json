@@ -1,10 +1,10 @@
 {
-    "name": "Hello, Blockstack",
+    "name": "Project GutenBlock",
     "start_url": "localhost:5000",
-    "description": "A simple demo of Blockstack Auth",
+    "description": "A decentralized, blockchain, web content verification service",
     "icons": [{
-      "src": "https://helloblockstack.com/icon-192x192.png",
-      "sizes": "192x192",
+      "src": "https://storage.googleapis.com/gaiaserver/PackHacksIcon.png",
+      "sizes": "152x152",
       "type": "image/png"
     }]
   }
