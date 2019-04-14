@@ -18,6 +18,7 @@ const server = http.createServer((req, res) => {
 });
 
 
+
 app.use(allowCrossDomain)
 app.use('/', express.static(__dirname + '/public'))
 app.listen(port, (err) => {
