@@ -2,7 +2,7 @@ var sjcl = require('sjcl');
 var fs = require('fs');
 
 
-export function getHashDate()
+exports.getHashDate = function()
 {
 var dataobj = {};
 dataobj['file'] = "../file";
