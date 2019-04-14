@@ -47,13 +47,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     putdata(){
         let thing = JSON.parse(document.getElementById(sdata));
-        blockstack.putFile('https://hub.blockstack.org/' + thing.url, {sign: false});
+        blockstack.putFile('thing.url, {sign: false});
         };
     }
 
     fetchdata() {
         let thing = JSON.parse(document.getElementById(sdata));
-        blockstack.getFile('https://hub.blockstack.org/' + thing.url, {decrypt: true, verify: false});
+        blockstack.getFile('thing.url, {decrypt: true, verify: false});
         };
     }
     
