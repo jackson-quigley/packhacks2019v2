@@ -38,4 +38,25 @@ document.addEventListener("DOMContentLoaded", function(event) {
         signin.style.display = "none";
         signout.style.display = "block";
     }
+    
+        
+    // These functions assume that the data file in this directory
+    // is updated with the most recent request.
+
+    var fs = require('fs');
+
+    putdata(){
+        let thing = JSON.parse(document.getElementById(sdata));
+        blockstack.putFile('https://hub.blockstack.org/' + thing.url, {sign: false});
+        };
+    }
+
+    fetchdata() {
+        let thing = JSON.parse(document.getElementById(sdata));
+        blockstack.getFile('https://hub.blockstack.org/' + thing.url, {decrypt: true, verify: false});
+        };
+    }
+    
+    
+    
 });
