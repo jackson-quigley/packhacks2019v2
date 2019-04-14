@@ -23,6 +23,7 @@
     "opn": "^4.0.2"
   },
   "dependencies": {
-    "blockstack": "^18.0.4"
+    "blockstack": "^18.0.4",
+    "sjcl": "^1.0.8"
   }
 }
