@@ -3,7 +3,9 @@ const opn = require('opn')
 
 const app = express()
 const port = 5000
-const http = require("http")
+const https = require("https")
+const url = require("url")
+const fs = require("fs")
 
 function allowCrossDomain(req, res, next) {
   res.header('Access-Control-Allow-Origin', '*')
@@ -12,12 +14,21 @@ function allowCrossDomain(req, res, next) {
   next()
 }
 
-const server = http.createServer((req, res) => {
-	  res.append('Content-Type', 'text/plain');
-	  res.end('Hello world!');
+app.use(express.urlencoded());
+app.use(express.json());
+app.post('/', function(req, res) {
+	var furl = req.body.url;
+	console.log(furl);
+	const file = fs.createWriteStream("file");
+	const request = https.get(furl, function(response) {
+	response.pipe(file);});
+	furl = furl.replace(/[^a-z0-9áéíóúñü \,_]/gim,"-");
+	console.log(furl);	
+	fs.writeFileSync("name",furl);
+	const crypto = require("crypto/crypto.js")
+	crypto.getHashDate()
+	
 });
-
-
 app.use(allowCrossDomain)
 app.use('/', express.static(__dirname + '/public'))
 app.listen(port, (err) => {
