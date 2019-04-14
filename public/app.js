@@ -12,6 +12,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
         blockstack.signUserOut(window.location.href)
     });
 
+    let request = document.getElementById('request');
+
     if (blockstack.isSignInPending()) {
         blockstack.handlePendingSignIn().then(function(userData) {
             window.location = window.location.origin
@@ -19,9 +21,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
     }
 
     if (!blockstack.isUserSignedIn()) {
+        request.style.display = "none";
         signin.style.display = "block";
         signout.style.display = "none";
     } else {
+        request.style.display = "block";
         signin.style.display = "none";
         signout.style.display = "block";
     }
