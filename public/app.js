@@ -12,6 +12,15 @@ document.addEventListener("DOMContentLoaded", function(event) {
         blockstack.signUserOut(window.location.href)
     });
 
+    let puts = document.getElementById('puts');
+    let gets = document.getElementById('gets');
+    puts.addEventListener('click', function(events) {
+        // code to put on Gaia here
+    })
+    gets.addEventListener('click', function(events) {
+        // code to get from Gaia here
+    })
+
     let request = document.getElementById('request');
 
     if (blockstack.isSignInPending()) {
