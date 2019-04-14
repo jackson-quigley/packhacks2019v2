@@ -30,6 +30,9 @@ app.post('/', function(req, res) {
 	crypto.getHashDate()
 	
 });
+
+
+
 app.use(allowCrossDomain)
 app.use('/', express.static(__dirname + '/public'))
 app.listen(port, (err) => {
