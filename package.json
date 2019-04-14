@@ -1,0 +1,28 @@
+{
+  "name": "project-gutenblock",
+  "version": "0.1.0",
+  "description": "A way to verify the permanence of web resources",
+  "main": "index.js",
+  "scripts": {
+    "browserify": "browserify requires.js -o public/bundle.js",
+    "start": "npm run browserify && node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nosyarg/packhacks2019.git"
+  },
+  "author": "Matthew Gregoire, Craig Messina, Jackson Quigley, Grayson York",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nosyarg/packhacks2019/issues"
+  },
+  "homepage": "https://github.com/nosyarg/packhacks2019",
+  "devDependencies": {
+    "browserify": "^14.5.0",
+    "express": "^4.15.2",
+    "opn": "^4.0.2"
+  },
+  "dependencies": {
+    "blockstack": "^18.0.4"
+  }
+}
