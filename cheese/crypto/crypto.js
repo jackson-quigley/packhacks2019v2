@@ -18,7 +18,11 @@ var newhash = sjcl.codec.hex.fromBits((new sjcl.hash.sha256()).update(file).fina
 //var oldhash = dataobj['hash'];
 if(alreadyexisted)
 {
-        oldhash = fulldataobj[url][]
+        oldhash = fulldataobj[url]['hash'];
+}
+else
+{
+        oldhash = '';
 }
 if(newhash == oldhash)
 {
