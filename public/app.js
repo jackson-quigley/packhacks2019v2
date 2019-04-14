@@ -1,8 +1,11 @@
 document.addEventListener("DOMContentLoaded", function(event) {
+    console.out("Clicked");
     let signin = document.getElementById('signin-button');
+    console.out("Clicked");
     signin.addEventListener('click', function(event) {
         event.preventDefault();
         const origin = window.location.origin;
+        console.out("Clicked");
         blockstack.redirectToSignIn(origin, origin + '/manifest.json', ['store_write', 'publish_data']);
     });
 
@@ -16,9 +19,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
     let gets = document.getElementById('gets');
     puts.addEventListener('click', function(events) {
         putdata();
+        alert("put data");
     })
     gets.addEventListener('click', function(events) {
         fetchdata();
+        alert("fetch data");
     })
 
     let request = document.getElementById('request');
@@ -45,16 +50,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     var fs = require('fs');
 
-    putdata(){
+    function putdata(){
         let thing = JSON.parse(document.getElementById(sdata));
-        blockstack.putFile('thing.url, {sign: false});
-        };
+        blockstack.putFile(thing.url, {sign: false});
     }
 
-    fetchdata() {
+    function fetchdata() {
         let thing = JSON.parse(document.getElementById(sdata));
-        blockstack.getFile('thing.url, {decrypt: true, verify: false});
-        };
+        blockstack.getFile(thing.url, {decrypt: true, verify: false});
     }
     
     
