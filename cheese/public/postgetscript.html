@@ -1,0 +1,20 @@
+<!DOCTYPE html5>
+<html>
+<body>
+<p id = "texttoedit"> not updated </p>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script>
+$.get("localhost:1337",function(data,status)
+{
+document.getElementById("texttoedit").innerHTML = data;
+});
+
+
+/*window.onload = function()
+{
+document.getElementById("texttoedit").innerHTML = "5";
+console.log("fuck");
+};*/
+</script>
+</body>
+</html>

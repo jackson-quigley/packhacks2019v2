@@ -29,7 +29,7 @@ app.post('/yeet', function(req, res) {
 		console.log("yeet",crypto.getHashDate);
 		crypto.getHashDate()
                 //console.log("GOT TO RETURN");
-                var tits = crypto.getHashDate();
+                var tits = JSON.stringify(crypto.getHashDate());
                 res.send(`<!DOCTYPE html>
 <html>
 	<head>
