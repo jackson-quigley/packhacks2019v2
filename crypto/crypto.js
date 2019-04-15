@@ -1,24 +1,23 @@
 var sjcl = require('sjcl');
-var fs = require('fs');
+//var fs = require('fs');
 
 
-function hash(infile)
+function getHashDate(dataobj)
 {
-        var data = fs.readFileSync(infile,'ascii');
-        return sjcl.codec.hex.fromBits((new sjcl.hash.sha256()).update(data).finalize());
+dataobj['file'] = "../file"
+dataobj['url'] = "../name"
+filepath = dataobj['file'];
+file = fs.readFileSync(filepath,'ascii');
+dataobj['date'] = (new Date(Date.now())).toLocaleString("en-US");
+dataobj['hash'] = sjcl.codec.hex.fromBits((new sjcl.hash.sha256()).update(file).finalize());
+return dataobj;
 }
-var jsonstr = fs.readFileSync("writefile.txt",'utf-8');; 
-var datadict = JSON.parse(jsonstr);
-var stupidstring = process.argv[2];
-var stupidhash = hash(stupidstring);
-if(!(stupidhash in datadict))
-{
-        console.log("NEVER")
-        datadict[stupidhash] = Date.now();
-}
-else
-{
-        console.log((new Date(datadict[stupidhash])).toLocaleString("en-US"));
-}
-jsonstr = JSON.stringify(datadict);
-fs.writeFileSync('writefile.txt', jsonstr);
+
+
+//dataobj = {'file':process.argv[2]}
+//dataobj = getHashDate(dataobj);
+//console.log(dataobj['date']);
+//console.log(dataobj['hash']);
+
+
+
