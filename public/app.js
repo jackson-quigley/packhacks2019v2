@@ -15,10 +15,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
     let puts = document.getElementById('puts');
     let gets = document.getElementById('gets');
     puts.addEventListener('click', function(events) {
-        // code to put on Gaia here
+        putdata();
     })
     gets.addEventListener('click', function(events) {
-        // code to get from Gaia here
+        fetchdata();
     })
 
     let request = document.getElementById('request');
@@ -47,13 +47,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     putdata(){
         let thing = JSON.parse(document.getElementById(sdata));
-        blockstack.putFile('https://hub.blockstack.org/' + thing.url, {sign: false});
+        blockstack.putFile('thing.url, {sign: false});
         };
     }
 
     fetchdata() {
         let thing = JSON.parse(document.getElementById(sdata));
-        blockstack.getFile('https://hub.blockstack.org/' + thing.url, {decrypt: true, verify: false});
+        blockstack.getFile('thing.url, {decrypt: true, verify: false});
         };
     }
     

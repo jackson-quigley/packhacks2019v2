@@ -28,79 +28,91 @@ app.post('/yeet', function(req, res) {
 		const crypto = require(__dirname + '/crypto/crypto')
 		console.log("yeet",crypto.getHashDate);
 		crypto.getHashDate()
-                //console.log("GOT TO RETURN");
-                var tits = JSON.stringify(crypto.getHashDate());
-                res.send(`<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<meta name"viewport" content="width-device-width, initial-scale=1">
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-        <title>Project GutenBlock - Home</title>
-        <script src="app.js"></script>
-        <script src="bundle.js"></script>
-	</head>
-	<header>	
-	<div id="header">
-		<h1>Project GutenBlock</h1>
-		<table align=center cellpadding="9">
-			<tr>
-				<td><a href=index.html>Home</a></td>
-				<td><a target="_blank" href=https://github.com/jackson-quigley/packhacks2019v2>Github</a></td>
-				<td><a href=howworks.html>How It Works</a></td>
-			</tr>
-		</table>
-	</div>
-	</header>
-	<body>
-<!--	<script src="files.js" type="text/javascript">
-	</script>
+		//console.log("GOT TO RETURN");
+		var tits = JSON.stringify(crypto.getHashDate());
+			res.send(`<!DOCTYPE html>
+			<html>
+				<head>
+					<meta charset="utf-8">
+					<meta name"viewport" content="width-device-width, initial-scale=1">
+					<link rel="stylesheet" type="text/css" href="css/style.css">
+				<title>Project GutenBlock - Home</title>
+				<script src="app.js"></script>
+				<script src="bundle.js"></script>
+				</head>
+				<header>	
+				<div id="header">
+					<h1>Project GutenBlock</h1>
+					<table align=center cellpadding="9">
+						<tr>
+							<td><a href=index.html>Home</a></td>
+							<td><a target="_blank" href=https://github.com/jackson-quigley/packhacks2019v2>Github</a></td>
+							<td><a href=howworks.html>How It Works</a></td>
+						</tr>
+					</table>
+				</div>
+				</header>
+				<body>
+			<!--	<script src="files.js" type="text/javascript">
+				</script>
 
-	<input id="myInput" value="URL">
-	<button id="myBtn" onclick="userInput()">Submit</button>
+				<input id="myInput" value="URL">
+				<button id="myBtn" onclick="userInput()">Submit</button>
 
-	<script>
-		var input = document.getElementById("myInput");
-input.addEventListener("keyup", function(event) {
-	  if (event.keyCode === 13) {
-		     event.preventDefault();
-		     document.getElementById("myBtn").click();
-		    }
-});
-	</script>
-	-->
+				<script>
+					var input = document.getElementById("myInput");
+			input.addEventListener("keyup", function(event) {
+					  if (event.keyCode === 13) {
+								     event.preventDefault();
+								     document.getElementById("myBtn").click();
+								    }
+			});
+				</script>
+				-->
 
-<p>${tits}</p>
-<form  method="POST" action="/yeet" id="request">
-	  URL:
-	    <input type="text" name="url" id="url" autocomplete="no">
-		  <input type="submit" value="Submit">
-</form>
 
-    <p class="lead">
-        <a href="#" class="btn btn-primary btn-lg" id="signin-button">
-        Login
-        </a>
-    </p>
+			<form  method="POST" action="/yeet" id="request">
+				  URL:
+				    <input type="text" name="url" id="url" autocomplete="no">
+					  <input type="submit" value="Submit">
+			</form>
+		<p id="sdata">${tits}</p>
+			    <p class="lead">
+				<a href="#" class="btn btn-primary btn-lg" id="signin-button">
+				Login
+				</a>
+			    </p>
 
-    <p class="lead">
-        <a href="#" class="btn btn-primary btn-lg" id="signout-button">
-        Logout
-        </a>
-    </p>
+			    <p class="lead">
+				<a href="#" class="btn btn-primary btn-lg" id="signout-button">
+				Logout
+				</a>
+			    </p>
 
-	</body>
-	<footer>
-	<div id="footer">
-	<p>
-(c) 2019 Project GutenBlock
-<br>
-Problems? Contact <a href="mailto:admin@thegutenblock.com">admin@gutenblock.com</a>
-	</p>
-	</div>
-	</footer>
-</html>
-`);
+			    <p class="lead">
+				<a href="#" class="btn btn-primary btn-lg" id="puts">
+				Put file into Gaia
+				</a>
+			    </p>
+
+			    <p class="lead">
+				<a href="#" class="btn btn-primary btn-lg" id="gets">
+				Get file from Gaia
+				</a>
+			    </p>
+
+				</body>
+				<footer>
+				<div id="footer">
+				<p>
+			(c) 2019 Project GutenBlock
+			<br>
+			Problems? Contact <a href="mailto:admin@thegutenblock.com">admin@gutenblock.com</a>
+				</p>
+				</div>
+				</footer>
+			</html>
+			`);
 	});
 });
 
