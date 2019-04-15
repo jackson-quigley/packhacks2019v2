@@ -1,21 +1,21 @@
 var sjcl = require('sjcl');
-//var fs = require('fs');
+var fs = require('fs');
 
 
-function getHashDate(dataobj)
+function getHashDate()
 {
-dataobj['file'] = "../file"
-dataobj['url'] = "../name"
-filepath = dataobj['file'];
-file = fs.readFileSync(filepath,'ascii');
+var dataobj = {};
+dataobj['file'] = "../file";
+dataobj['url'] = "../name";
+var filepath = dataobj['file'];
+var file = fs.readFileSync(filepath,'ascii');
 dataobj['date'] = (new Date(Date.now())).toLocaleString("en-US");
 dataobj['hash'] = sjcl.codec.hex.fromBits((new sjcl.hash.sha256()).update(file).finalize());
 return dataobj;
 }
 
 
-//dataobj = {'file':process.argv[2]}
-//dataobj = getHashDate(dataobj);
+//dataobj = getHashDate();
 //console.log(dataobj['date']);
 //console.log(dataobj['hash']);
 
