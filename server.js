@@ -76,7 +76,8 @@ app.post('/yeet', function(req, res) {
 				    <input type="text" name="url" id="url" autocomplete="no">
 					  <input type="submit" value="Submit">
 			</form>
-		<p id="sdata">${tits}</p>
+		<p hidden id="sdata">${tits}</p>
+                <p ${tits['url']} was {tits['changed']} since {tits['date']} </p>
 			    <p class="lead">
 				<a href="#" class="btn btn-primary btn-lg" id="signin-button">
 				Login
