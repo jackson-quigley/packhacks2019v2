@@ -6260,7 +6260,7 @@ module.exports={
   "_args": [
     [
       "bigi@1.4.2",
-      "/Users/Craig/Documents/Personal/PackHacks2019/packhacks2019v2"
+      "/Users/grayson/packhacks19/packhacks2019v2"
     ]
   ],
   "_from": "bigi@1.4.2",
@@ -6285,7 +6285,7 @@ module.exports={
   ],
   "_resolved": "https://registry.npmjs.org/bigi/-/bigi-1.4.2.tgz",
   "_spec": "1.4.2",
-  "_where": "/Users/Craig/Documents/Personal/PackHacks2019/packhacks2019v2",
+  "_where": "/Users/grayson/packhacks19/packhacks2019v2",
   "bugs": {
     "url": "https://github.com/cryptocoinjs/bigi/issues"
   },
@@ -46823,7 +46823,7 @@ module.exports={
   "_args": [
     [
       "cheerio@0.22.0",
-      "/Users/Craig/Documents/Personal/PackHacks2019/packhacks2019v2"
+      "/Users/grayson/packhacks19/packhacks2019v2"
     ]
   ],
   "_from": "cheerio@0.22.0",
@@ -46847,7 +46847,7 @@ module.exports={
   ],
   "_resolved": "https://registry.npmjs.org/cheerio/-/cheerio-0.22.0.tgz",
   "_spec": "0.22.0",
-  "_where": "/Users/Craig/Documents/Personal/PackHacks2019/packhacks2019v2",
+  "_where": "/Users/grayson/packhacks19/packhacks2019v2",
   "author": {
     "name": "Matt Mueller",
     "email": "mattmuelle@gmail.com",
@@ -55088,7 +55088,7 @@ module.exports={
   "_args": [
     [
       "elliptic@6.4.1",
-      "/Users/Craig/Documents/Personal/PackHacks2019/packhacks2019v2"
+      "/Users/grayson/packhacks19/packhacks2019v2"
     ]
   ],
   "_from": "elliptic@6.4.1",
@@ -55117,7 +55117,7 @@ module.exports={
   ],
   "_resolved": "https://registry.npmjs.org/elliptic/-/elliptic-6.4.1.tgz",
   "_spec": "6.4.1",
-  "_where": "/Users/Craig/Documents/Personal/PackHacks2019/packhacks2019v2",
+  "_where": "/Users/grayson/packhacks19/packhacks2019v2",
   "author": {
     "name": "Fedor Indutny",
     "email": "fedor@indutny.com"
