@@ -9,19 +9,28 @@ document.addEventListener("DOMContentLoaded", function(event) {
     let signout = document.getElementById('signout-button');
     signout.addEventListener('click', function(event) {
         event.preventDefault();
-        blockstack.signUserOut(window.location.href)
+        blockstack.signUserOut(window.location.href);
     });
 
-    let puts = document.getElementById('puts');
-    let gets = document.getElementById('gets');
-    puts.addEventListener('click', function(events) {
-        // code to put on Gaia here
-        alert("add to Gaia");
+    let submit = document.getElementById('submit');
+    submit.addEventListener('click', function(event) {
+        // put code to interface with Gaia here
+        alert("pushed submit");
     })
-    gets.addEventListener('click', function(events) {
-        // code to get from Gaia here
-        alert("get from Gaia");
-    })
+
+    // Let's try to do everything with the submit button
+    // event listener if we can.
+
+    // let puts = document.getElementById('puts');
+    // let gets = document.getElementById('gets');
+    // puts.addEventListener('click', function(events) {
+    //     // code to put on Gaia here
+    //     alert("add to Gaia");
+    // })
+    // gets.addEventListener('click', function(events) {
+    //     // code to get from Gaia here
+    //     alert("get from Gaia");
+    // })
 
     let request = document.getElementById('request');
 
